@@ -24,14 +24,14 @@
 	var motDePasse = "4e4"
 	
 	var code = prompt("Veuillez entrer le mot de passe ci-dessous.");
-        if (code != [motDePasse, "2049admin"]) {
+        if (code != motDePasse) {
 		window.location.replace("auth-error.html");
 	}
 	
 	var name = prompt("Veuillez entrer votre nom / pseudo", "Invité");
 	document.write("----------------------------------------------------Bienvenue " + name + " ! -----------------------------------------------------------".big())
 	if (name = "2049admin") {
-		document.write.big("Vous êtes connecté en tant qu'Administrateur.")
+		document.write("Vous êtes connecté en tant qu'Administrateur.")
 	}
 	
   </script>
