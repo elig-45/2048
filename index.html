@@ -139,13 +139,8 @@
     </p>
   </div>
   <div id="div_horloge"></div>
- 
 	
-  <footer class="footerPrincipal>
-     <center>Tous droits réservés <strong>Eli G</strong> • 2018 ©
-  </footer>
-	
-<script type="text/javascript">
+<script>
 window.onload=function() {
   horloge('div_horloge');
 };
@@ -162,11 +157,14 @@ function horloge(el) {
   actualiser();
   setInterval(actualiser,1000);
 }
-</script>
+  </script>
+  <footer class="footerPrincipal>
+     <center>Tous droits réservés <strong>Eli G</strong> • 2018 ©
+  </footer>
   <style>
 	.footerPrincipal{
-		background-color: #87a96b;
-		}
+	    background-color: #87a96b;
+	}
   </style>	
   <script src="js/bind_polyfill.js"></script>
   <script src="js/classlist_polyfill.js"></script>
