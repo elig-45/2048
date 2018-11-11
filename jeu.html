@@ -73,6 +73,9 @@
 	
 	
 	var name = prompt("Veuillez entrer votre nom / pseudo", "Invité");
+	if (name == null) {
+		name = "Anonyme 🕵️"
+	}
 	alert("⚠Le site est en développement. \n Merci de votre patience et de votre fidélité !⚠")
 	document.write("----------------------- \n-----------------------------Bienvenue " + name + " ! ----------------------------------------------------------- \n ".big())
 	if (name == "2049admin") {
