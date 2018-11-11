@@ -2,7 +2,9 @@
 var motDePasse = "4e4"
 	
 	var code = prompt("Veuillez entrer le mot de passe ci-dessous.");
-        if (code != motDePasse) {
-		window.location.replace("auth-error.html");
-	}
+        if (code == motDePasse) {
+		window.location.replace("jeu.html");
+	} else {
+		window.location.replace("auth-error.html")}
 </script>
+<title>Connexion | 2049 </title>
