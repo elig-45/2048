@@ -1,10 +1,22 @@
-<script>
-var motDePasse = "4e4"
+
+
+
+<html>
+  <head>
+    <script type="text/javascript">
+      function RedirectionJavascript(){
+        document.location.href="http://manouvellepage.com";
+      }
+   </script>
+	  
+   <script>
+        var motDePasse = "4e4"
 	
 	var code = prompt("Veuillez entrer le mot de passe ci-dessous.");
         if (code == motDePasse) {
-		window.location.replace("jeu.html");
+		window.setTimeout("location=('jeu.html');",3000);
 	} else {
-		window.location.replace("auth-error.html")}
-</script>
-<title>Connexion | 2049 </title>
+		window.setTimeout("location=('auth-error.html');",0000);}
+  </script>
+  <title>Connexion | 2049 </title>
+  <img src="">
