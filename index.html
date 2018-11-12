@@ -1,12 +1,12 @@
-  <script>
+  <!--<script>
         var motDePasse = "4e4"
 	
 	var code = prompt("Veuillez entrer le mot de passe ci-dessous.");
         if (code == motDePasse) {
-		window.setTimeout("location=('jeu');",4500);
+		window.setTimeout("location=('jeu');",10000);
 	} else {
 		window.setTimeout("location=('auth-error');",0000);}
-  </script>
+  </script> -->
   <title>Connexion | 2049 </title>
   <img src="E7CCA8A3-F55E-42FA-B5CC-685E55F2BA78.gif" alt="Gif représentant une porte qui s'ouvre" class="center">
   <style>
@@ -31,4 +31,9 @@ Password: <input type="password" value="Mot de passe" id="myInput">
       x.type = "password";
     }
   }
+   if (x.value === "4e4"){
+	   window.setTimeout("location=('jeu');" , 0000);
+   } else {
+	   window.setTimeout("location=('auth-error');" , 0000);
+   }
 </script>
