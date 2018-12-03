@@ -2,6 +2,10 @@
 <html>
   <link rel="icon" href="ecoledirecte.ico" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <script src="script.js"></script>
+  <script>
+  const name = require("script.js")  
+  </script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <bgsound src="SN14LVB.mp3">
   <div class="barreDeNavigation">
@@ -16,13 +20,6 @@
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112025576-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-112025576-2');
-</script>
 
   <link rel="icon" href="ecoledirecte.ico" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -93,26 +90,7 @@ b {
 
     <div class="above-game">
       <p class="game-intro">Associez les nombres jusqu'à <strong>2049.</strong></p>
-      <a class="restart-button">Nouvelle Partie</a>
-      <script>
-	
-	
-	var name = prompt("Veuillez entrer votre nom / pseudo", "Invité");
-	if (name == null) {
-		name = "Anonyme 🕵️"
-	}
-	let texteStatut = "Partagez ce lien à fond ! \n"
-	let grasStatut = "bit.ly/2049-jeu"
-	let statut = texteStatut + grasStatut
-	alert("⚠Le site est en développement. \n Merci de votre patience et de votre fidélité !⚠")
-	alert(statut)
-	swal("Bravo !", "Tu as entré le bon mot de passe.", "success")
-	document.write("----------------------- \n-----------------------------Bienvenue " + name + " ! ----------------------------------------------------------- \n ".big())
-	if (name == "2049admin") {
-		document.write("Vous êtes connecté en tant qu'Administrateur.")
-	}
-    </script>
-    </div>
+      <a class="restart-button">Nouvelle Partie</a></div>
 
     <div class="game-container">
       <div class="game-message">
