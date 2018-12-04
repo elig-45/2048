@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <link rel="icon" href="ecoledirecte.ico" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <script src="script.js"></script>
+  <script>
+  const name = require("script.js")
+  document.write("----------------------- \n-----------------------------Bienvenue " + name + " ! ----------------------------------------------------------- \n ".big())
+  if (name == "2049admin") {
+    document.write("Vous êtes connecté en tant qu'Administrateur.")
+  }
+  </script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <bgsound src="SN14LVB.mp3">
+  <div class="barreDeNavigation">
+  <center>
+  <a class="active" href="#">Home</a>
+  <a href="./news">News</a>
+  <a href="contact.html">Contact</a>
+  <a href="./about">Plus d'Informations</a>
+  <a href="./media">Médias</a>
+  <a href="endev">Mode facile</a>
+  <a href="endev">Mode classique</a>
+  <a href="endev">Mode difficile</a>
+  </center>
+</div>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112025576-2"></script>
+
+  <link rel="icon" href="ecoledirecte.ico" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="icon" href="ecoledirecte.ico" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <meta charset="utf-8">
+  <meta name="google-site-verification" content="oy5gKOlilAO9BbxtMWp0Mb9KNAnfYh3zvY2jOsqZazo" />
+  <meta name="google-site-verification" content="oy5gKOlilAO9BbxtMWp0Mb9KNAnfYh3zvY2jOsqZazo" />
+  <title>2049 - Jeu Officiel</title>  
+  <link rel="apple-touch-icon" href="/meta/apple-touch-icon.png" />
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="ecoledirecte.ico">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone, retina -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <link rel="icon" href="ecoledirecte.ico" />
+  <link rel="apple-touch-icon" href="/meta/apple-touch-icon.png" />
+  <style>
+    /* Add a black background color to the top navigation */
+.barreDeNavigation {
+    background-color: #333;
+    overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.barreDeNavigation a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+	  
+b {
+    text-decoration: bold;
+}
+/* Change the color of links on hover */
+.barreDeNavigation a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Add a color to the active/current link */
+.barreDeNavigation a.active {
+    background-color: darkgreen;
+    color: white;
+}
+  </style>
+</head>
+	
+<body>
+  
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">2049</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+	      <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <p class="game-intro">Associez les nombres jusqu'à <strong>2049.</strong></p>
+      <a class="restart-button">Nouvelle Partie</a></div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Keep going</a>
+          <a class="retry-button">Recommencer</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">Comment jouer:</strong> Utilisez les <strong>flèches du clavier</strong> pour déplacer les nombres. Lorsque vous associez deux nombres identiques, ils <strong>se fusionneront en un!</strong>
+    </p>
+    <hr>
+    <p>
+    <strong> Dédicace à Alexandre C, Loïc Déan, Lucas Gorini (pour les gifs amusants) et aux 4e4 !</strong>
+    <hr>
+    <strong class="important">Note:</strong> Ceci est une copie légale de 2048. Vous pouvez y jouer sur mobile via <a href="http://git.io/2048">http://git.io/2048.</a> Toute autre copie est fausse et doit etre utilisée avec vigilance.
+    </p>
+    <hr>
+    <p>
+	    Créé par <strong>Eli Gold</strong>, inspiré du <a href="https://gabrielecirulli.github.io/2048/" title="Original">jeu 2048</a>.
+    </p>
+  </div>
+  <div id="div_horloge"></div>
+	
+<!--<script>
+window.onload=function() {
+  horloge('div_horloge');
+};
+ 
+function horloge(el) {
+  if(typeof el=="string") { el = document.getElementById(el); }
+  function actualiser() {
+    var date = new Date();
+    var str = date.getHours();
+    str += ':'+(date.getMinutes()<10?'0':'')+date.getMinutes();
+    str += ':'+(date.getSeconds()<10?'0':'')+date.getSeconds();
+    el.innerHTML = str;
+  }
+  actualiser();
+  setInterval(actualiser,1000);
+}
+  </script>-->
+  <div class="footerPrincipal">
+  <footer>
+     <center>Tous droits réservés <strong>Eli G</strong> • 2018 ©
+  </footer>
+  </div>
+  <style>
+	.footerPrincipal{
+	    background-color: #416623;
+	    color: white;
+	}
+  </style>	
+  <script src="js/bind_polyfill.js"></script>
+  <link rel="apple-touch-icon" href="/meta/apple-touch-icon.png" />
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager_2.js"></script>
+  <script src="js/application.js"></script>
+</body>
+</html>
