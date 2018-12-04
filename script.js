@@ -19,4 +19,4 @@ window.dataLayer = window.dataLayer || [];
 	alert("⚠Le site est en développement. \n Merci de votre patience et de votre fidélité !⚠")
 	alert(statut)
 	swal("Bravo !", "Tu as entré le bon mot de passe.", "success")
-	
+	swal("#GhobadiPaysan", "Ç"
